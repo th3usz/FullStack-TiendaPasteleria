@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+
+  /* alineacion del texto para que queden separado y centrado */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bdd1e5;
+
+  /* pading del navbar sobre el body */
+  padding: 10px 10px; 
+
+  img {
+    display: block;
+    padding: 5px 15px; 
+  }
+
+  .nav-links {
+    display: flex;
+    list-style-type: none; /* sacamos los puntos negros */
+    padding-inline-start: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    /* Bordes como botones del navbar */
+    a { 
+      background-color: #63642d;
+      color: white;
+      padding: 10px;
+      text-decoration: none; /* sacamos el subrayado */
+    }
+  }
+
+  .cart {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+
+    img {
+      display: block;
+      width: 30px;
+      height: auto;
+    }
+  }
+}
