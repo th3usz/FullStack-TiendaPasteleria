@@ -50,3 +50,66 @@ body {
     }
   }
 }
+
+/* HERO */
+.hero {
+  /* espacio interno se organiza en filas y columnas */
+  display: grid;
+  /* se reparten dos columnas, cada columna tendra un 45% de ancho y la otra tendra 55% */
+  grid-template-columns: 45% 55%; 
+  /* gap para entre columnas */
+  gap: 10px;
+
+  background: #e3e3e3;
+  border: 1px solid #cfcfcf;
+
+  /* padding */
+  padding: 25px;
+
+  /* informacion mostrada en el  */
+  .hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+    h1 {
+      margin: 0;
+      font-size: 40px; /* similar al mockup */
+    }
+
+    p {
+      margin: 0;
+      max-width: 560px;
+    }
+
+    .hero-boton {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      color: #111;
+      text-decoration: none;
+      padding: 10px 15px;
+      border: 3px solid #111;
+    }
+  }
+
+  .hero-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 650px;   /* tope horizontal */
+      max-height: 450px;  /* tope vertical */
+      object-fit: cover;
+      border: 2px solid #555; /* marco de la imagen como en el wireframe */
+    }
+  }
+}
+
+
+
