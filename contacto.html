@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto — Pastelería Mil Sabores</title>
+
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+  <link rel="icon" type="image/png" href="assets/images/icon.png" sizes="32x32">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/contacto.js" defer></script>
+</head>
+<body>
+  <div id="site-navbar"></div>
+
+  <main class="container contacto-page">
+    <!-- Logo + nombre (igual al login) -->
+    <div class="contacto-brand">
+      <img src="assets/images/logo.png" alt="Logo" />
+      <h1 class="brand-name">Pastelería Mil Sabores</h1>
+    </div>
+
+    <!-- Tarjeta -->
+    <section class="contacto">
+      <div class="contacto-header">FORMULARIO DE CONTACTOS</div>
+
+      <form id="form-contacto" novalidate>
+        <label for="contacto-nombre">NOMBRE COMPLETO</label>
+        <input id="contacto-nombre" type="text" required />
+
+        <label for="contacto-correo">CORREO</label>
+        <input id="contacto-correo" type="email" required />
+
+        <label for="contacto-mensaje">CONTENIDO</label>
+        <textarea id="contacto-mensaje" rows="4" required></textarea>
+
+        <button type="submit" class="btn-contacto">ENVIAR MENSAJE</button>
+        <small id="contacto-estado" class="estado oculto"></small>
+      </form>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulario — Pastelería Mil Sabores</title>
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="./assets/styles/styles.css" />
+  <link rel="icon" type="image/png" href="assets/images/icon.png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/login.js" defer></script>
+
+</head>
+<body>
+  <div id="site-navbar"></div>
+
+  <main class="container login-page">
+    <!-- logo y nombre empresa (simple) -->
+    <div class="login-brand">
+      <img src="assets/images/logo.png" alt="Logo" />
+      <h1 class="brand-name">Pastelería Mil Sabores</h1>
+    </div>
+
+    <!-- tarjeta / formulario -->
+    <section class="login">
+      <div class="login-header">Inicio de sesion</div>
+
+      <form id="form-login" novalidate>
+        <label for="login-email">CORREO</label>
+        <input id="login-email" type="email" required />
+
+        <label for="login-pass">CONTRASENA</label>
+        <input id="login-pass" type="password" required />
+
+        <div class="inicio-sesion-registro">
+            <button type="submit" class="btn-login">Iniciar sesion</button>
+            <a href="registro.html" class="btn-registrar">Regristate ahora!</a> 
+        </div>
+
+        <small id="login-estado" class="estado oculto"></small> 
+      </form>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>

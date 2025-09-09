@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Carrito — Pastelería Mil Sabores</title>
+
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+  <link rel="icon" type="image/png" href="assets/images/icon.png" sizes="32x32">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/carrito.js" defer></script>
+</head>
+
+
+<body>
+
+    <div id="site-navbar"></div>
+
+
+    <main class="container">
+    <h1 class="titulo-pagina">Mi carrito de compras</h1>
+
+    <section class="carrito">
+      <!-- IZQUIERDA -->
+      <div class="carrito-lista">
+
+        <article class="carrito-item" data-price="8000">
+
+
+          <div class="item-media">
+            <img src="assets/images/pastel-1.png" alt="Producto 1">
+          </div>
+
+
+          <div class="item-info">
+            <h3 class="item-titulo">Producto #1</h3>
+            <p class="item-desc">Pink lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          </div>
+
+
+          <div class="item-acciones">
+            <div class="item-precio">$ 8.000</div>
+            <div class="item-cant">
+              <button class="btn-cant menos" aria-label="Restar">−</button>
+              <input class="input-cant" type="number" value="1" min="1">
+              <button class="btn-cant mas" aria-label="Sumar">+</button>
+            </div>
+          </div>
+
+
+        </article>
+
+        <article class="carrito-item" data-price="8000">
+
+
+          <div class="item-media">
+            <img src="assets/images/pastel-1.png" alt="Producto 1">
+          </div>
+
+
+          <div class="item-info">
+            <h3 class="item-titulo">Producto #1</h3>
+            <p class="item-desc">Pink lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          </div>
+
+
+          <div class="item-acciones">
+            <div class="item-precio">$ 8.000</div>
+            <div class="item-cant">
+              <button class="btn-cant menos" aria-label="Restar">−</button>
+              <input class="input-cant" type="number" value="1" min="1">
+              <button class="btn-cant mas" aria-label="Sumar">+</button>
+            </div>
+          </div>
+
+          
+        </article>
+
+      </div>
+
+      <!-- DERECHA -->
+      <aside class="carrito-resumen">
+
+        <div class="total-titulo">TOTAL:</div>
+        <div class="total-monto" id="carrito-total">$ 24.000</div>
+
+        <label for="cupon" class="cupon-label">Ingrese el cupón de descuento</label>
+
+        <div class="cupon-row">
+          <input id="cupon" type="text" placeholder="Ingresa tu cupón">
+          <button id="btn-cupon" type="button">Aplicar</button>
+        </div>
+
+        <div id="cupon-msg" class="cupon-msg oculto"></div>
+
+        <button class="btn-pagar" type="button">PAGAR</button>
+
+      </aside>
+
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  
+</body>
+</html>

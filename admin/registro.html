@@ -3,21 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Formulario — Pastelería Mil Sabores</title>
+  <title>Admin — Pastelería Mil Sabores</title>
 
-  <!-- Hoja de estilos -->
-  <link rel="stylesheet" href="./assets/styles/styles.css" />
-  <link rel="icon" type="image/png" href="assets/images/icon.png" sizes="32x32">
+  <link rel="stylesheet" href="../assets/styles/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/icon.png" sizes="32x32">
+
+  <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="admin">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+      <div class="admin-brand">
+        <img src="../assets/images/logo.png" alt="Company" />
+        <span>Pasteleria</span>
+      </div>
 
-    <!-- Navbar -->
-  <div id="site-navbar"></div>
+      <div class="admin-buttons">
+        <a class="side-btn" href="admin.html">Dashboard</a>
+        <a class="side-btn" href="registro.html">Agregar Usuiario</a>
+      </div>
+    </aside>
 
-<main class="container">
+    <!-- Contenido principal -->
+    <section class="admin-main">
+      <header class="admin-topbar">
+        <h1>¡HOLA Administrador!</h1>
+      </header>
+
+      <div class="admin-panel">
   <section class="registro">
     <div class="registro-header">Registro de usuario</div>
 
@@ -60,12 +77,8 @@
       <small id="estado" class="estado oculto"></small>
     </form>
   </section>
-</main>
-
-  <!-- Hoja de estilos -->
-  <div id="site-footer"></div>
-
-  <script src="assets/js/layout.js" defer></script>
-  <script src="assets/js/registro.js" defer></script>
+</div>
+    </section>
+  </div>
 </body>
 </html>
