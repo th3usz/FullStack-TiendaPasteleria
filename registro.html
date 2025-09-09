@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulario — Pastelería Mil Sabores</title>
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="./assets/styles/styles.css" />
+  <link rel="icon" type="image/png" href="assets/images/icon.png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+  <div id="site-navbar"></div>
+
+<main class="container">
+  <section class="registro">
+    <div class="registro-header">Registro de usuario</div>
+
+    <form id="form-registro" novalidate>
+      <label for="nombre">NOMBRE COMPLETO</label>
+      <input id="nombre" name="nombre" type="text" required />
+
+      <label for="correo">CORREO</label>
+      <input id="correo" name="correo" type="email" required />
+
+      <label for="correo2">CORREO</label>
+      <input id="correo2" name="correo2" type="email" required />
+
+      <label for="pass">CONTRASEÑA</label>
+      <input id="pass" name="pass" type="password" required />
+
+      <label for="pass2">CONFIRMAR CONTRASEÑA</label>
+      <input id="pass2" name="pass2" type="password" required />
+
+      <label for="fono">TELEFONO (opcional)</label>
+      <input id="fono" name="fono" type="tel" inputmode="tel" />
+
+      <div class="registro-grid">
+        <div class="col">
+          <label for="region">-- Seleccione la región --</label>
+          <select id="region" name="region" required>
+            <option value="">-- Seleccione la región --</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <label for="comuna">-- Seleccione la comuna --</label>
+          <select id="comuna" name="comuna" disabled required>
+            <option value="">-- Seleccione la comuna --</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-registrar">REGISTRAR</button>
+      <small id="estado" class="estado oculto"></small>
+    </form>
+  </section>
+</main>
+
+  <!-- Footer -->
+  <div id="site-footer"></div>
+
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/registro.js" defer></script>
+</body>
+</html>

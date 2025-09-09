@@ -1,6 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    background: #FFF5E1;      /* crema pastel */
+    color: #5D4037;           /* texto principal */
+    font-family: "Lato", Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Pacifico", cursive;   /* encabezados */
+  color: #5D4037;
+  margin-top: 0;
 }
 
 /* Navbar */
@@ -10,7 +19,7 @@ body {
   /* alineacion del texto para que queden separado y centrado */
   justify-content: space-between;
   align-items: center;
-  background-color: #bdd1e5;
+  background-color: #FFF5E1;
 
   /* pading del navbar sobre el body */
   padding: 10px 10px; 
@@ -30,8 +39,8 @@ body {
 
     /* Bordes como botones del navbar */
     a { 
-      background-color: #63642d;
-      color: white;
+      background-color: #FFC0CB;
+      color: #5D4037;
       padding: 10px;
       text-decoration: none; /* sacamos el subrayado */
     }
@@ -81,6 +90,7 @@ body {
     p {
       margin: 0;
       max-width: 560px;
+      color: #5D4037;
     }
 
     .hero-boton {
@@ -119,15 +129,15 @@ body {
   margin: 28px 0;
 
   .producto {
-    background: #e3e3e3;
-    border: 1px solid #cfcfcf;
+    background: #FFF5E1;
+    border: 1px solid #EADFCF;
     padding: 12px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 
     .producto-media {
-      border: 2px solid #666;
+      border: 2px solid #8B4513;
       height: 150px;
       display: flex;
       align-items: center;
@@ -141,7 +151,7 @@ body {
     }
 
     .producto-titulo {
-      color: #1a5ed8;
+      color: #8B4513;
       text-decoration: none;
       font-size: 14px;
 
@@ -232,4 +242,63 @@ body {
   background: #6b6b6b;
   color: #fff;
   cursor: pointer;
+}
+
+/* ===== Registro ===== */
+.registro {
+  background: #FFF5E1;
+  border: 1px solid #EADFCF;
+  padding: 20px;
+  max-width: 720px;
+  margin: 24px auto;
+
+  .registro-header {
+    background: #EADFCF;
+    color: #5D4037;
+    font-weight: 700;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    label {
+      font-size: 12px;
+      letter-spacing: .3px;
+      color: #5D4037;
+    }
+
+    input, select {
+      padding: 10px;
+      border: 2px solid #8B4513;
+      background: #fff;
+      color: #5D4037;
+      outline: none;
+    }
+
+    .registro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 6px;
+
+      .col { display: flex; flex-direction: column; gap: 8px; }
+      select:disabled { opacity: .6; }
+    }
+
+    .btn-registrar {
+      width: 200px;
+      margin: 22px auto 0;
+      padding: 10px 14px;
+      border: 2px solid #8B4513;
+      background: #8B4513;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .estado { color: #5D4037; text-align: center; margin-top: 8px; }
+  }
 }
