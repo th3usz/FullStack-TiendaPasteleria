@@ -15,8 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const correo = (email.value || "").trim();
     const clave  = pass.value || "";
 
-    if (!correo) {
-         estado.textContent = "Ingresa tu correo."; 
+    if (
+    !correo || correo.value.indexOf("@duoc.cl") === -1 
+    || correo.value.indexOf("@profesor.duoc.cl") === -1 
+    || correo.value.indexOf("@gmail.com") === -1
+    ) {
+         estado.textContent = "Ingresa un correo valido"; 
          email.focus(); return; 
         }
     if (!clave)  { 

@@ -17,20 +17,23 @@
   <script src="assets/js/contacto.js" defer></script>
 </head>
 <body>
-  <div id="site-navbar"></div>
 
+  <!-- se llama al navbar-->
+  <div id="navbar"></div>
+
+  <!-- se define el main de la web -->
   <main class="container contacto-page">
-    <!-- Logo + nombre (igual al login) -->
+    <!-- logo y nombre de la marca -->
     <div class="contacto-brand">
       <img src="assets/images/logo.png" alt="Logo" />
       <h1 class="brand-name">Pastelería Mil Sabores</h1>
     </div>
 
-    <!-- Tarjeta -->
+    <!-- formulario -->
     <section class="contacto">
       <div class="contacto-header">FORMULARIO DE CONTACTOS</div>
 
-      <form id="form-contacto" novalidate>
+      <form id="form-contacto">
         <label for="contacto-nombre">NOMBRE COMPLETO</label>
         <input id="contacto-nombre" type="text" required />
 
@@ -46,6 +49,6 @@
     </section>
   </main>
 
-  <div id="site-footer"></div>
+  <div id="footer"></div>
 </body>
 </html>

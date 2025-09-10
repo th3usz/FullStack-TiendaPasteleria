@@ -7,6 +7,6 @@ async function cargar(id, ruta) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  cargar("site-navbar", "navbar.html"); // coloca navbar.html dentro de site-navbar
-  cargar("site-footer", "footer.html"); // coloca footer.html dentro de site-footer
+  cargar("navbar", "navbar.html"); // coloca navbar.html dentro de site-navbar
+  cargar("footer", "footer.html"); // coloca footer.html dentro de site-footer
 });
