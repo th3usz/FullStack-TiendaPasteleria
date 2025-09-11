@@ -187,62 +187,48 @@ h1, h2, h3 {
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
-}
 
-.footer-left {
+  .footer-izq {
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
+  }
 
-.payments {
-  display: flex;
-  gap: 8px;
-}
-.payments img {
-  width: 32px;
-  height: auto;
-  display: block;
-}
+  .pagos {
+    display: flex;
+    gap: 8px;
+  }
+  .pagos img {
+    width: 32px;
+    height: auto;
+    display: block;
+  }
 
-.footer-links {
-  display: flex;
-  align-items: center;
-  gap: 0;
-}
-.footer-links a {
-  color: #1a5ed8;
-  text-decoration: none;
-  padding: 0 6px;
-  border-right: 1px solid #333;
-}
-.footer-links a:last-child {
-  border-right: 0;
-}
+  .noticias {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 360px;
+    width: 100%;
+  }
+  .noticias-row {
+    display: flex;
+  }
+  .noticias-row input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #111;
+    border-right: 0;
+    outline: none;
+  }
+  .noticias-row button {
+    padding: 8px 12px;
+    border: 1px solid #111;
+    background: #6b6b6b;
+    color: #fff;
+    cursor: pointer;
+  }
 
-.newsletter {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  max-width: 360px;
-  width: 100%;
-}
-.newsletter-row {
-  display: flex;
-}
-.newsletter-row input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #111;
-  border-right: 0;
-  outline: none;
-}
-.newsletter-row button {
-  padding: 8px 12px;
-  border: 1px solid #111;
-  background: #6b6b6b;
-  color: #fff;
-  cursor: pointer;
 }
 
 /*  Registro */
@@ -578,9 +564,7 @@ h1, h2, h3 {
       color: #fff;
       cursor: pointer;
   }
-
 }
-
 
 .nosotros-page {
   display: flex;

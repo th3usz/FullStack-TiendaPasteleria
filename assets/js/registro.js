@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // validación al enviar
   form.addEventListener("submit", (e) => {
   
-    const correo = document.getElementById("correo").value.trim(); // .trim() elimina espacios al inicio/fin (útil para mails)
+    const correo = document.getElementById("correo").value.trim(); // .trim()
     const correo2 = document.getElementById("correo2").value.trim();
     const pass = document.getElementById("pass").value;
     const pass2 = document.getElementById("pass2").value;
